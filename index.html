@@ -17,6 +17,7 @@
     <header class="header">
 
         <div class="logo">
+
             <div class="logo-symbol">
                 AT
             </div>
@@ -25,6 +26,7 @@
                 <strong>اهورا تکتاز</strong>
                 <span>خاورمیانه</span>
             </div>
+
         </div>
 
 
@@ -40,6 +42,10 @@
 
             <a href="#services">
                 خدمات گارانتی
+            </a>
+
+            <a href="#warranty">
+                استعلام گارانتی
             </a>
 
             <a href="#parts">
@@ -239,15 +245,29 @@
 
                 <input
                     type="text"
-                    placeholder="شماره سریال محصول"
                     id="serialNumber"
+                    placeholder="شماره سریال محصول"
+                    autocomplete="off"
                 >
 
-                <button type="button" class="btn gold">
+                <button
+                    type="button"
+                    class="btn gold"
+                    id="warrantyButton"
+                >
                     استعلام گارانتی
                 </button>
 
             </div>
+
+
+            <!-- نتیجه استعلام اینجا نمایش داده می‌شود -->
+
+            <div
+                id="warrantyResult"
+                class="warranty-result"
+                style="display:none;"
+            ></div>
 
         </section>
 
@@ -342,7 +362,7 @@
 
 
 
-        <!-- ================= SHOP PLACEHOLDER ================= -->
+        <!-- ================= SHOP ================= -->
 
         <section class="shop" id="shop">
 
@@ -391,15 +411,27 @@
 
                 <input
                     type="text"
-                    placeholder="کد پیگیری سفارش"
                     id="trackingCode"
+                    placeholder="کد پیگیری سفارش"
+                    autocomplete="off"
                 >
 
-                <button type="button" class="btn gold">
+                <button
+                    type="button"
+                    class="btn gold"
+                    id="trackingButton"
+                >
                     پیگیری سفارش
                 </button>
 
             </div>
+
+
+            <div
+                id="trackingResult"
+                class="warranty-result"
+                style="display:none;"
+            ></div>
 
         </section>
 
@@ -428,7 +460,9 @@
 
             <div class="contact-box">
 
+
                 <div>
+
                     <strong>
                         پشتیبانی
                     </strong>
@@ -436,10 +470,13 @@
                     <p>
                         شماره تماس به‌زودی اضافه می‌شود.
                     </p>
+
                 </div>
 
 
+
                 <div>
+
                     <strong>
                         آدرس
                     </strong>
@@ -447,10 +484,13 @@
                     <p>
                         اطلاعات آدرس شرکت به‌زودی اضافه می‌شود.
                     </p>
+
                 </div>
 
 
+
                 <div>
+
                     <strong>
                         ایمیل
                     </strong>
@@ -458,7 +498,9 @@
                     <p>
                         اطلاعات ایمیل شرکت به‌زودی اضافه می‌شود.
                     </p>
+
                 </div>
+
 
             </div>
 
@@ -499,6 +541,248 @@
 
     </footer>
 
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+
+            /* =========================================
+               WARRANTY CHECK
+               ========================================= */
+
+            const serialInput =
+                document.getElementById("serialNumber");
+
+            const warrantyButton =
+                document.getElementById("warrantyButton");
+
+            const warrantyResult =
+                document.getElementById("warrantyResult");
+
+
+            warrantyButton.addEventListener("click", function () {
+
+                const serial =
+                    serialInput.value.trim();
+
+
+                if (serial === "") {
+
+                    warrantyResult.style.display = "block";
+
+                    warrantyResult.className =
+                        "warranty-result error";
+
+                    warrantyResult.innerHTML = `
+                        <strong>شماره سریال وارد نشده است.</strong>
+                        <br>
+                        لطفاً شماره سریال محصول را وارد کنید.
+                    `;
+
+                    return;
+                }
+
+
+                /*
+                 * اطلاعات آزمایشی
+                 *
+                 * بعداً این قسمت به دیتابیس واقعی
+                 * شرکت متصل خواهد شد.
+                 */
+
+                const demoSerials = {
+
+                    "AT10001": {
+                        status: "معتبر",
+                        product: "محصول نمونه",
+                        date: "1406/06/30"
+                    },
+
+                    "AT10002": {
+                        status: "منقضی شده",
+                        product: "محصول نمونه",
+                        date: "1405/03/15"
+                    }
+
+                };
+
+
+                if (demoSerials[serial]) {
+
+                    const data =
+                        demoSerials[serial];
+
+
+                    warrantyResult.style.display = "block";
+
+                    warrantyResult.className =
+                        "warranty-result success";
+
+
+                    warrantyResult.innerHTML = `
+
+                        <div class="result-title">
+                            نتیجه استعلام گارانتی
+                        </div>
+
+                        <div class="result-row">
+                            <span>شماره سریال</span>
+                            <strong>${serial}</strong>
+                        </div>
+
+                        <div class="result-row">
+                            <span>وضعیت گارانتی</span>
+                            <strong>${data.status}</strong>
+                        </div>
+
+                        <div class="result-row">
+                            <span>محصول</span>
+                            <strong>${data.product}</strong>
+                        </div>
+
+                        <div class="result-row">
+                            <span>تاریخ پایان گارانتی</span>
+                            <strong>${data.date}</strong>
+                        </div>
+
+                    `;
+
+                }
+
+                else {
+
+                    warrantyResult.style.display = "block";
+
+                    warrantyResult.className =
+                        "warranty-result error";
+
+
+                    warrantyResult.innerHTML = `
+
+                        <div class="result-title">
+                            نتیجه استعلام
+                        </div>
+
+                        <p>
+                            شماره سریال
+                            <strong>${serial}</strong>
+                            در سامانه آزمایشی پیدا نشد.
+                        </p>
+
+                        <p>
+                            لطفاً شماره سریال را بررسی کنید.
+                        </p>
+
+                    `;
+
+                }
+
+            });
+
+
+
+            /* =========================================
+               TRACKING DEMO
+               ========================================= */
+
+            const trackingInput =
+                document.getElementById("trackingCode");
+
+            const trackingButton =
+                document.getElementById("trackingButton");
+
+            const trackingResult =
+                document.getElementById("trackingResult");
+
+
+            trackingButton.addEventListener("click", function () {
+
+                const code =
+                    trackingInput.value.trim();
+
+
+                if (code === "") {
+
+                    trackingResult.style.display = "block";
+
+                    trackingResult.className =
+                        "warranty-result error";
+
+                    trackingResult.innerHTML = `
+                        <strong>کد پیگیری وارد نشده است.</strong>
+                        <br>
+                        لطفاً کد پیگیری سفارش را وارد کنید.
+                    `;
+
+                    return;
+                }
+
+
+                if (code === "AT2026001") {
+
+                    trackingResult.style.display = "block";
+
+                    trackingResult.className =
+                        "warranty-result success";
+
+                    trackingResult.innerHTML = `
+
+                        <div class="result-title">
+                            وضعیت سفارش
+                        </div>
+
+                        <div class="result-row">
+                            <span>کد پیگیری</span>
+                            <strong>${code}</strong>
+                        </div>
+
+                        <div class="result-row">
+                            <span>وضعیت</span>
+                            <strong>در حال پردازش</strong>
+                        </div>
+
+                        <div class="result-row">
+                            <span>مرحله فعلی</span>
+                            <strong>آماده‌سازی سفارش</strong>
+                        </div>
+
+                    `;
+
+                }
+
+                else {
+
+                    trackingResult.style.display = "block";
+
+                    trackingResult.className =
+                        "warranty-result error";
+
+                    trackingResult.innerHTML = `
+
+                        <div class="result-title">
+                            سفارش پیدا نشد
+                        </div>
+
+                        <p>
+                            کد پیگیری
+                            <strong>${code}</strong>
+                            در سامانه آزمایشی وجود ندارد.
+                        </p>
+
+                    `;
+
+                }
+
+            });
+
+
+        });
+
+    </script>
 
 </body>
 
