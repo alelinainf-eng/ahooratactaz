@@ -1,737 +1,941 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>اهورا تکتاز خاورمیانه | گارانتی و خدمات پس از فروش</title>
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        اهورا تکتاز خاورمیانه | گارانتی و خدمات پس از فروش
+    </title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-<!-- ================= HEADER ================= -->
 
-<header class="main-header">
+<!-- =====================================================
+     HEADER
+===================================================== -->
 
-    <div class="header-inner">
+<header class="header">
 
-        <a href="#home" class="brand">
-            <div class="brand-logo">AT</div>
 
-            <div class="brand-text">
-                <strong>اهورا تکتاز</strong>
-                <span>خاورمیانه</span>
-            </div>
-        </a>
+    <div class="logo">
 
-        <nav class="main-nav">
-            <a href="#home">خانه</a>
-            <a href="#about">درباره ما</a>
-            <a href="#contact">تماس با ما</a>
-        </nav>
+        <div class="logo-symbol">
+            AT
+        </div>
 
-        <div class="header-actions">
+        <div class="logo-name">
 
-            <button class="header-icon" onclick="openCart()">
-                🛒
-                <span id="cartCount">0</span>
-            </button>
+            <strong>
+                اهورا تکتاز
+            </strong>
+
+            <span>
+                خاورمیانه
+            </span>
 
         </div>
 
     </div>
 
+
+
+    <nav class="navbar">
+
+        <a href="#home">
+            صفحه اصلی
+        </a>
+
+        <a href="#about">
+            درباره ما
+        </a>
+
+        <a href="#services">
+            خدمات گارانتی
+        </a>
+
+        <a href="#warranty">
+            استعلام گارانتی
+        </a>
+
+        <a href="#service-request">
+            ثبت درخواست
+        </a>
+
+        <a href="#parts">
+            فروشگاه قطعات
+        </a>
+
+        <a href="#tracking">
+            پیگیری سفارش
+        </a>
+
+        <a href="#contact">
+            تماس با ما
+        </a>
+
+    </nav>
+
+
+
+    <div class="header-actions">
+
+        <button
+            type="button"
+            aria-label="جستجو"
+        >
+            ⌕
+        </button>
+
+
+        <button
+            type="button"
+            aria-label="حساب کاربری"
+        >
+            ♙
+        </button>
+
+
+        <button
+            type="button"
+            id="cartButton"
+            aria-label="سبد خرید"
+        >
+            🛒
+            <span id="cartCount">
+                0
+            </span>
+        </button>
+
+    </div>
+
+
 </header>
 
 
-<!-- ================= HOME ================= -->
 
-<main id="home">
+<!-- =====================================================
+     MAIN
+===================================================== -->
 
-    <section class="dashboard-home">
+<main>
 
-        <div class="home-brand">
 
-            <div class="large-logo">
-                AT
-            </div>
 
-            <h1>اهورا تکتاز خاورمیانه</h1>
+<!-- =====================================================
+     HERO
+===================================================== -->
 
-            <p>
-                گارانتی و خدمات پس از فروش
-            </p>
+<section
+    class="hero"
+    id="home"
+>
 
-            <div class="gold-line"></div>
+
+    <div class="hero-content">
+
+
+        <span class="eyebrow">
+            اهورا تکتاز خاورمیانه
+        </span>
+
+
+        <h1>
+
+            همراه مطمئن شما در
 
             <span>
-                سامانه خدمات مشتریان
+                گارانتی و خدمات پس از فروش
             </span>
 
-        </div>
+        </h1>
 
 
-        <!-- ================= DASHBOARD ================= -->
+        <p>
 
-        <div class="dashboard-grid">
+            ارائه خدمات تخصصی گارانتی، تعمیرات استاندارد
+            و تأمین قطعات اصلی با هدف حفظ کیفیت و رضایت مشتریان.
 
-            <!-- WARRANTY -->
+        </p>
 
-            <a href="#warranty" class="dashboard-card dashboard-main">
 
-                <div class="dashboard-icon">
-                    🛡️
-                </div>
+        <div class="hero-buttons">
 
-                <div class="dashboard-content">
 
-                    <h2>استعلام گارانتی</h2>
-
-                    <p>
-                        وضعیت و اعتبار گارانتی محصول خود را بررسی کنید.
-                    </p>
-
-                </div>
-
-                <div class="dashboard-arrow">
-                    ←
-                </div>
-
+            <a
+                href="#warranty"
+                class="btn gold"
+            >
+                استعلام گارانتی
             </a>
 
 
-            <!-- SERVICE -->
-
-            <a href="#service-request" class="dashboard-card">
-
-                <div class="dashboard-icon">
-                    🔧
-                </div>
-
-                <div class="dashboard-content">
-
-                    <h2>درخواست خدمات</h2>
-
-                    <p>
-                        درخواست تعمیر، سرویس و خدمات پس از فروش
-                    </p>
-
-                </div>
-
-                <div class="dashboard-arrow">
-                    ←
-                </div>
-
+            <a
+                href="#service-request"
+                class="btn outline"
+            >
+                ثبت درخواست خدمات
             </a>
 
-
-            <!-- ORDER -->
-
-            <a href="#tracking" class="dashboard-card">
-
-                <div class="dashboard-icon">
-                    📦
-                </div>
-
-                <div class="dashboard-content">
-
-                    <h2>پیگیری سفارش</h2>
-
-                    <p>
-                        وضعیت سفارش و درخواست خدمات خود را پیگیری کنید.
-                    </p>
-
-                </div>
-
-                <div class="dashboard-arrow">
-                    ←
-                </div>
-
-            </a>
-
-
-            <!-- PARTS -->
-
-            <a href="#parts" class="dashboard-card">
-
-                <div class="dashboard-icon">
-                    ⚙️
-                </div>
-
-                <div class="dashboard-content">
-
-                    <h2>فروشگاه قطعات</h2>
-
-                    <p>
-                        مشاهده و خرید قطعات اصلی محصولات
-                    </p>
-
-                </div>
-
-                <div class="dashboard-arrow">
-                    ←
-                </div>
-
-            </a>
-
-
-            <!-- CART -->
-
-            <a href="javascript:void(0)" onclick="openCart()" class="dashboard-card cart-dashboard">
-
-                <div class="dashboard-icon">
-                    🛒
-                </div>
-
-                <div class="dashboard-content">
-
-                    <h2>سبد خرید</h2>
-
-                    <p>
-                        مشاهده قطعات انتخاب‌شده و ادامه خرید
-                    </p>
-
-                </div>
-
-                <div class="cart-dashboard-count">
-                    <span id="dashboardCartCount">0</span>
-                    کالا
-                </div>
-
-            </a>
-
-
-            <!-- ABOUT -->
-
-            <a href="#about" class="dashboard-card">
-
-                <div class="dashboard-icon">
-                    🏢
-                </div>
-
-                <div class="dashboard-content">
-
-                    <h2>درباره اهورا</h2>
-
-                    <p>
-                        آشنایی با شرکت اهورا تکتاز خاورمیانه
-                    </p>
-
-                </div>
-
-                <div class="dashboard-arrow">
-                    ←
-                </div>
-
-            </a>
-
-
-            <!-- CONTACT -->
-
-            <a href="#contact" class="dashboard-card">
-
-                <div class="dashboard-icon">
-                    ☎️
-                </div>
-
-                <div class="dashboard-content">
-
-                    <h2>پشتیبانی و تماس</h2>
-
-                    <p>
-                        ارتباط با واحد پشتیبانی و خدمات مشتریان
-                    </p>
-
-                </div>
-
-                <div class="dashboard-arrow">
-                    ←
-                </div>
-
-            </a>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= WARRANTY ================= -->
-
-    <section id="warranty" class="page-section">
-
-        <div class="section-heading">
-
-            <span>WARRANTY</span>
-
-            <h2>استعلام گارانتی</h2>
-
-            <p>
-                برای بررسی وضعیت گارانتی، کد گارانتی محصول را وارد کنید.
-            </p>
 
         </div>
 
 
-        <div class="warranty-box">
+    </div>
+
+
+
+    <div class="hero-decoration">
+
+        <div class="gold-ring"></div>
+
+        <div class="shield">
+            ✓
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section
+    class="services"
+    id="services"
+>
+
+
+    <div class="service-card">
+
+        <div class="service-icon">
+            ◇
+        </div>
+
+        <h3>
+            گارانتی معتبر
+        </h3>
+
+        <p>
+            خدمات مطمئن و پشتیبانی پس از فروش
+        </p>
+
+    </div>
+
+
+
+    <div class="service-card">
+
+        <div class="service-icon">
+            ♧
+        </div>
+
+        <h3>
+            پشتیبانی تخصصی
+        </h3>
+
+        <p>
+            مشاوره و راهنمایی توسط کارشناسان
+        </p>
+
+    </div>
+
+
+
+    <div class="service-card">
+
+        <div class="service-icon">
+            ⚙
+        </div>
+
+        <h3>
+            تعمیرات استاندارد
+        </h3>
+
+        <p>
+            تعمیر با استفاده از قطعات اصلی
+        </p>
+
+    </div>
+
+
+
+    <div class="service-card">
+
+        <div class="service-icon">
+            ◇
+        </div>
+
+        <h3>
+            فروش قطعات
+        </h3>
+
+        <p>
+            تأمین قطعات اصلی و مورد نیاز
+        </p>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     WARRANTY
+===================================================== -->
+
+<section
+    class="warranty"
+    id="warranty"
+>
+
+
+    <div class="section-title">
+
+        <span>
+            خدمات آنلاین
+        </span>
+
+        <h2>
+            استعلام گارانتی
+        </h2>
+
+        <p>
+            برای بررسی وضعیت گارانتی، شماره سریال محصول خود را وارد کنید.
+        </p>
+
+    </div>
+
+
+
+    <div class="warranty-box">
+
+
+        <input
+            type="text"
+            id="serialNumber"
+            placeholder="شماره سریال محصول"
+            autocomplete="off"
+        >
+
+
+        <button
+            type="button"
+            class="btn gold"
+            id="warrantyButton"
+        >
+            استعلام گارانتی
+        </button>
+
+
+    </div>
+
+
+
+    <div
+        id="warrantyResult"
+        class="warranty-result"
+        style="display:none;"
+    ></div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     SERVICE REQUEST
+===================================================== -->
+
+<section
+    class="service-request"
+    id="service-request"
+>
+
+
+    <div class="section-title">
+
+        <span>
+            خدمات پس از فروش
+        </span>
+
+        <h2>
+            ثبت درخواست خدمات
+        </h2>
+
+        <p>
+            اطلاعات خود را وارد کنید تا درخواست شما ثبت و بررسی شود.
+        </p>
+
+    </div>
+
+
+
+    <form
+        id="serviceForm"
+        class="service-form"
+    >
+
+
+        <div class="form-group">
+
+            <label for="customerName">
+                نام و نام خانوادگی
+            </label>
 
             <input
                 type="text"
-                id="warrantyCode"
-                placeholder="مثلاً AT10001"
+                id="customerName"
+                placeholder="نام و نام خانوادگی"
+                required
             >
 
-            <button onclick="checkWarranty()">
-                استعلام گارانتی
-            </button>
+        </div>
+
+
+
+        <div class="form-group">
+
+            <label for="customerPhone">
+                شماره تماس
+            </label>
+
+            <input
+                type="tel"
+                id="customerPhone"
+                placeholder="مثلاً 09123456789"
+                required
+            >
 
         </div>
 
 
-        <div id="warrantyResult" class="warranty-result"></div>
 
-    </section>
+        <div class="form-group">
 
+            <label for="productSerial">
+                شماره سریال محصول
+            </label>
 
-
-    <!-- ================= SERVICE REQUEST ================= -->
-
-    <section id="service-request" class="page-section">
-
-        <div class="section-heading">
-
-            <span>SERVICE</span>
-
-            <h2>درخواست خدمات</h2>
-
-            <p>
-                برای دریافت خدمات پس از فروش، فرم زیر را تکمیل کنید.
-            </p>
+            <input
+                type="text"
+                id="productSerial"
+                placeholder="شماره سریال"
+                required
+            >
 
         </div>
 
 
-        <form id="serviceForm" class="service-form">
 
-            <div class="form-group">
+        <div class="form-group">
 
-                <label>
-                    نام و نام خانوادگی
-                </label>
+            <label for="serviceType">
+                نوع درخواست
+            </label>
 
-                <input
-                    type="text"
-                    id="customerName"
-                    required
-                    placeholder="نام و نام خانوادگی"
-                >
+            <select
+                id="serviceType"
+                required
+            >
 
-            </div>
+                <option value="">
+                    انتخاب نوع درخواست
+                </option>
 
+                <option value="repair">
+                    درخواست تعمیر
+                </option>
 
-            <div class="form-group">
+                <option value="warranty">
+                    استفاده از گارانتی
+                </option>
 
-                <label>
-                    شماره تماس
-                </label>
+                <option value="technical">
+                    مشاوره فنی
+                </option>
 
-                <input
-                    type="tel"
-                    id="customerPhone"
-                    required
-                    placeholder="09xxxxxxxxx"
-                >
+                <option value="parts">
+                    درخواست قطعه
+                </option>
 
-            </div>
+                <option value="other">
+                    سایر موارد
+                </option>
 
+            </select>
 
-            <div class="form-group">
-
-                <label>
-                    کد محصول
-                </label>
-
-                <input
-                    type="text"
-                    id="productCode"
-                    placeholder="کد محصول"
-                >
-
-            </div>
+        </div>
 
 
-            <div class="form-group">
 
-                <label>
-                    نوع خدمت
-                </label>
+        <div class="form-group full">
 
-                <select id="serviceType" required>
+            <label for="customerMessage">
+                توضیحات
+            </label>
 
-                    <option value="">
-                        انتخاب نوع خدمت
-                    </option>
+            <textarea
+                id="customerMessage"
+                rows="5"
+                placeholder="توضیحات مربوط به مشکل یا درخواست خود را بنویسید..."
+            ></textarea>
 
-                    <option>
-                        تعمیر
-                    </option>
-
-                    <option>
-                        سرویس
-                    </option>
-
-                    <option>
-                        بررسی گارانتی
-                    </option>
-
-                    <option>
-                        سایر خدمات
-                    </option>
-
-                </select>
-
-            </div>
+        </div>
 
 
-            <div class="form-group full-width">
 
-                <label>
-                    توضیحات
-                </label>
-
-                <textarea
-                    id="serviceDescription"
-                    rows="5"
-                    placeholder="توضیحات مربوط به درخواست خود را بنویسید..."
-                ></textarea>
-
-            </div>
-
+        <div class="form-submit">
 
             <button
                 type="submit"
-                class="form-submit full-width"
+                class="btn gold"
             >
-                ثبت درخواست خدمات
-            </button>
-
-        </form>
-
-
-        <div id="serviceResult" class="warranty-result"></div>
-
-    </section>
-
-
-
-    <!-- ================= PARTS STORE ================= -->
-
-    <section id="parts" class="page-section">
-
-        <div class="section-heading">
-
-            <span>PARTS STORE</span>
-
-            <h2>فروشگاه قطعات</h2>
-
-            <p>
-                قطعات اصلی مورد نیاز خود را مشاهده و انتخاب کنید.
-            </p>
-
-        </div>
-
-
-        <div class="product-grid">
-
-
-            <!-- PRODUCT 1 -->
-
-            <div
-                class="product-card"
-                data-name="قطعه اصلی شماره ۱"
-                data-price="850000"
-            >
-
-                <div class="product-image">
-                    <span>AT</span>
-                </div>
-
-                <div class="product-info">
-
-                    <h3>
-                        قطعه اصلی شماره ۱
-                    </h3>
-
-                    <p>
-                        قطعه اصلی و مورد تأیید شرکت
-                    </p>
-
-                    <div class="product-bottom">
-
-                        <strong>
-                            ۸۵۰,۰۰۰ تومان
-                        </strong>
-
-                        <button class="add-cart">
-                            افزودن به سبد
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- PRODUCT 2 -->
-
-            <div
-                class="product-card"
-                data-name="قطعه اصلی شماره ۲"
-                data-price="1250000"
-            >
-
-                <div class="product-image">
-                    <span>AT</span>
-                </div>
-
-                <div class="product-info">
-
-                    <h3>
-                        قطعه اصلی شماره ۲
-                    </h3>
-
-                    <p>
-                        قطعه اصلی و مورد تأیید شرکت
-                    </p>
-
-                    <div class="product-bottom">
-
-                        <strong>
-                            ۱,۲۵۰,۰۰۰ تومان
-                        </strong>
-
-                        <button class="add-cart">
-                            افزودن به سبد
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- PRODUCT 3 -->
-
-            <div
-                class="product-card"
-                data-name="قطعه اصلی شماره ۳"
-                data-price="1750000"
-            >
-
-                <div class="product-image">
-                    <span>AT</span>
-                </div>
-
-                <div class="product-info">
-
-                    <h3>
-                        قطعه اصلی شماره ۳
-                    </h3>
-
-                    <p>
-                        قطعه اصلی و مورد تأیید شرکت
-                    </p>
-
-                    <div class="product-bottom">
-
-                        <strong>
-                            ۱,۷۵۰,۰۰۰ تومان
-                        </strong>
-
-                        <button class="add-cart">
-                            افزودن به سبد
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= ORDER TRACKING ================= -->
-
-    <section id="tracking" class="page-section">
-
-        <div class="section-heading">
-
-            <span>ORDER TRACKING</span>
-
-            <h2>پیگیری سفارش</h2>
-
-            <p>
-                کد پیگیری خود را وارد کنید.
-            </p>
-
-        </div>
-
-
-        <div class="tracking-box">
-
-            <input
-                type="text"
-                id="trackingCode"
-                placeholder="مثلاً AT2026001"
-            >
-
-            <button onclick="trackOrder()">
-                پیگیری سفارش
+                ثبت درخواست
             </button>
 
         </div>
 
 
-        <div id="trackingResult" class="warranty-result"></div>
-
-    </section>
+    </form>
 
 
 
-    <!-- ================= ABOUT ================= -->
-
-    <section id="about" class="page-section about-section">
-
-        <div class="section-heading">
-
-            <span>ABOUT US</span>
-
-            <h2>درباره اهورا تکتاز خاورمیانه</h2>
-
-        </div>
+    <div
+        id="serviceResult"
+        class="warranty-result"
+        style="display:none;"
+    ></div>
 
 
-        <div class="about-content">
-
-            <p>
-                شرکت اهورا تکتاز خاورمیانه با هدف ارائه خدمات گارانتی،
-                پشتیبانی و خدمات پس از فروش فعالیت می‌کند.
-            </p>
-
-            <p>
-                هدف ما ایجاد تجربه‌ای مطمئن، سریع و حرفه‌ای برای مشتریان
-                و ارائه خدمات با کیفیت و استاندارد است.
-            </p>
-
-        </div>
-
-    </section>
+</section>
 
 
 
-    <!-- ================= CONTACT ================= -->
+<!-- =====================================================
+     ABOUT
+===================================================== -->
 
-    <section id="contact" class="page-section contact-section">
-
-        <div class="section-heading">
-
-            <span>CONTACT</span>
-
-            <h2>تماس با ما</h2>
-
-            <p>
-                برای دریافت راهنمایی و پشتیبانی با ما در ارتباط باشید.
-            </p>
-
-        </div>
+<section
+    class="about"
+    id="about"
+>
 
 
-        <div class="contact-grid">
+    <div class="about-line"></div>
 
-            <div class="contact-card">
 
-                <span>☎</span>
+    <span>
+        درباره اهورا تکتاز خاورمیانه
+    </span>
 
-                <h3>پشتیبانی</h3>
 
-                <p>
-                    شماره تماس شرکت
-                </p>
+    <h2>
 
+        اعتماد شما،
+
+        <strong>
+            سرمایه ماست
+        </strong>
+
+    </h2>
+
+
+    <p>
+
+        اهورا تکتاز خاورمیانه در زمینه گارانتی،
+        خدمات پس از فروش، تعمیرات تخصصی و تأمین
+        قطعات فعالیت می‌کند.
+
+    </p>
+
+
+    <a
+        href="#contact"
+        class="more"
+    >
+        بیشتر درباره ما ←
+    </a>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PARTS STORE
+===================================================== -->
+
+<section
+    class="parts"
+    id="parts"
+>
+
+
+    <div class="section-title">
+
+        <span>
+            فروشگاه
+        </span>
+
+        <h2>
+            قطعات اصلی
+        </h2>
+
+        <p>
+            قطعات مورد نیاز خود را با اطمینان تهیه کنید.
+        </p>
+
+    </div>
+
+
+
+    <div class="product-grid">
+
+
+
+        <!-- PRODUCT 1 -->
+
+        <div
+            class="product-card"
+            data-name="قطعه اصلی شماره ۱"
+            data-price="850000"
+        >
+
+            <div class="product-image">
+                AT
             </div>
 
 
-            <div class="contact-card">
+            <div class="product-info">
 
-                <span>✉</span>
+                <span>
+                    قطعه اصلی
+                </span>
 
-                <h3>ایمیل</h3>
-
-                <p>
-                    ایمیل رسمی شرکت
-                </p>
-
-            </div>
-
-
-            <div class="contact-card">
-
-                <span>⌖</span>
-
-                <h3>آدرس</h3>
+                <h3>
+                    قطعه اصلی شماره ۱
+                </h3>
 
                 <p>
-                    آدرس شرکت
+                    قطعه اورجینال مناسب محصولات اهورا تکتاز
                 </p>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        ۸۵۰,۰۰۰ تومان
+                    </strong>
+
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                    >
+                        افزودن به سبد
+                    </button>
+
+                </div>
 
             </div>
 
         </div>
 
-    </section>
+
+
+        <!-- PRODUCT 2 -->
+
+        <div
+            class="product-card"
+            data-name="قطعه اصلی شماره ۲"
+            data-price="1250000"
+        >
+
+            <div class="product-image">
+                AT
+            </div>
+
+
+            <div class="product-info">
+
+                <span>
+                    قطعه اصلی
+                </span>
+
+                <h3>
+                    قطعه اصلی شماره ۲
+                </h3>
+
+                <p>
+                    قطعه استاندارد با کیفیت بالا
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        ۱,۲۵۰,۰۰۰ تومان
+                    </strong>
+
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                    >
+                        افزودن به سبد
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 3 -->
+
+        <div
+            class="product-card"
+            data-name="قطعه اصلی شماره ۳"
+            data-price="1750000"
+        >
+
+            <div class="product-image">
+                AT
+            </div>
+
+
+            <div class="product-info">
+
+                <span>
+                    قطعه اصلی
+                </span>
+
+                <h3>
+                    قطعه اصلی شماره ۳
+                </h3>
+
+                <p>
+                    قطعه اصلی و سازگار با محصول
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        ۱,۷۵۰,۰۰۰ تومان
+                    </strong>
+
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                    >
+                        افزودن به سبد
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     TRACKING
+===================================================== -->
+
+<section
+    class="tracking"
+    id="tracking"
+>
+
+
+    <div class="section-title">
+
+        <span>
+            خدمات آنلاین
+        </span>
+
+        <h2>
+            پیگیری سفارش
+        </h2>
+
+        <p>
+            کد پیگیری سفارش خود را وارد کنید.
+        </p>
+
+    </div>
+
+
+
+    <div class="tracking-box">
+
+
+        <input
+            type="text"
+            id="trackingCode"
+            placeholder="کد پیگیری سفارش"
+            autocomplete="off"
+        >
+
+
+        <button
+            type="button"
+            class="btn gold"
+            id="trackingButton"
+        >
+            پیگیری سفارش
+        </button>
+
+
+    </div>
+
+
+
+    <div
+        id="trackingResult"
+        class="warranty-result"
+        style="display:none;"
+    ></div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section
+    class="contact"
+    id="contact"
+>
+
+
+    <div class="section-title">
+
+        <span>
+            ارتباط با ما
+        </span>
+
+        <h2>
+            تماس با اهورا تکتاز
+        </h2>
+
+        <p>
+            اطلاعات تماس و پشتیبانی شرکت در این بخش قرار خواهد گرفت.
+        </p>
+
+    </div>
+
+
+
+    <div class="contact-box">
+
+
+        <div>
+
+            <strong>
+                پشتیبانی
+            </strong>
+
+            <p>
+                شماره تماس به‌زودی اضافه می‌شود.
+            </p>
+
+        </div>
+
+
+
+        <div>
+
+            <strong>
+                آدرس
+            </strong>
+
+            <p>
+                اطلاعات آدرس شرکت به‌زودی اضافه می‌شود.
+            </p>
+
+        </div>
+
+
+
+        <div>
+
+            <strong>
+                ایمیل
+            </strong>
+
+            <p>
+                اطلاعات ایمیل شرکت به‌زودی اضافه می‌شود.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
 
 </main>
 
 
 
-<!-- ================= CART MODAL ================= -->
+<!-- =====================================================
+     CART MODAL
+===================================================== -->
 
 <div
     id="cartOverlay"
     class="cart-overlay"
-    onclick="closeCartOutside(event)"
 >
 
-    <div
-        class="cart-modal"
-        onclick="event.stopPropagation()"
-    >
+
+    <div class="cart-modal">
+
 
         <div class="cart-header">
 
-            <div>
+            <h2>
+                سبد خرید
+            </h2>
 
-                <span>SHOPPING CART</span>
-
-                <h2>
-                    سبد خرید
-                </h2>
-
-            </div>
 
             <button
-                class="cart-close"
-                onclick="closeCart()"
+                type="button"
+                id="closeCart"
             >
                 ×
             </button>
@@ -739,16 +943,19 @@
         </div>
 
 
-        <div id="cartItems" class="cart-items">
 
-            <div class="empty-cart">
+        <div id="cartItems">
+
+            <p class="empty-cart">
                 سبد خرید شما خالی است.
-            </div>
+            </p>
 
         </div>
 
 
+
         <div class="cart-footer">
+
 
             <div class="cart-total">
 
@@ -764,540 +971,1051 @@
 
 
             <button
+                type="button"
+                class="btn gold"
                 id="checkoutButton"
-                class="checkout-button"
             >
                 ادامه و ثبت سفارش
             </button>
 
+
         </div>
 
+
     </div>
+
 
 </div>
 
 
 
-<!-- ================= FOOTER ================= -->
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 
-<footer class="main-footer">
+<footer>
+
 
     <div class="footer-logo">
-        AT
+
+        <span>
+            AT
+        </span>
+
+
+        <div>
+
+            <strong>
+                اهورا تکتاز
+            </strong>
+
+            <small>
+                خاورمیانه
+            </small>
+
+        </div>
+
     </div>
 
-    <h3>
-        اهورا تکتاز خاورمیانه
-    </h3>
 
     <p>
-        گارانتی و خدمات پس از فروش
+        © 2026 اهورا تکتاز خاورمیانه
     </p>
 
-    <div class="footer-line"></div>
-
-    <small>
-        © کلیه حقوق این وب‌سایت محفوظ است.
-    </small>
 
 </footer>
 
 
 
-<!-- ================= JAVASCRIPT ================= -->
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
 
 <script>
 
-let cart = [];
 
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
 
 
-/* ================= WARRANTY ================= */
 
-function checkWarranty() {
+        /* =================================================
+           WARRANTY
+        ================================================= */
 
-    const code =
-        document.getElementById("warrantyCode").value.trim();
+        const serialInput =
+            document.getElementById("serialNumber");
 
-    const result =
-        document.getElementById("warrantyResult");
 
+        const warrantyButton =
+            document.getElementById("warrantyButton");
 
-    if (!code) {
 
-        result.innerHTML = `
-            <div class="result-error">
-                لطفاً کد گارانتی را وارد کنید.
-            </div>
-        `;
+        const warrantyResult =
+            document.getElementById("warrantyResult");
 
-        return;
-    }
 
 
-    if (code === "AT10001") {
+        warrantyButton.addEventListener(
+            "click",
+            function () {
 
-        result.innerHTML = `
 
-            <div class="result-success">
+                const serial =
+                    serialInput.value.trim();
 
-                <h3>
-                    ✓ گارانتی معتبر است
-                </h3>
 
-                <div class="result-row">
-                    <span>محصول</span>
-                    <strong>محصول نمونه</strong>
-                </div>
 
-                <div class="result-row">
-                    <span>وضعیت</span>
-                    <strong>معتبر</strong>
-                </div>
+                if (serial === "") {
 
-                <div class="result-row">
-                    <span>پایان گارانتی</span>
-                    <strong>۱۴۰۶/۰۶/۳۰</strong>
-                </div>
+                    warrantyResult.style.display =
+                        "block";
 
-            </div>
-        `;
+                    warrantyResult.className =
+                        "warranty-result error";
 
-    }
+                    warrantyResult.innerHTML = `
 
-    else if (code === "AT10002") {
+                        <strong>
+                            شماره سریال وارد نشده است.
+                        </strong>
 
-        result.innerHTML = `
+                        <br>
 
-            <div class="result-warning">
+                        لطفاً شماره سریال محصول را وارد کنید.
 
-                <h3>
-                    گارانتی منقضی شده است
-                </h3>
+                    `;
 
-                <div class="result-row">
-                    <span>محصول</span>
-                    <strong>محصول نمونه</strong>
-                </div>
+                    return;
 
-                <div class="result-row">
-                    <span>پایان گارانتی</span>
-                    <strong>۱۴۰۵/۰۳/۱۵</strong>
-                </div>
+                }
 
-            </div>
-        `;
 
-    }
 
-    else {
+                const demoSerials = {
 
-        result.innerHTML = `
+                    "AT10001": {
 
-            <div class="result-error">
+                        status: "معتبر",
 
-                کد گارانتی مورد نظر پیدا نشد.
+                        product: "محصول نمونه",
 
-            </div>
-        `;
+                        date: "1406/06/30"
 
-    }
+                    },
 
-}
 
+                    "AT10002": {
 
+                        status: "منقضی شده",
 
-/* ================= SERVICE REQUEST ================= */
+                        product: "محصول نمونه",
 
-document
-    .getElementById("serviceForm")
-    .addEventListener("submit", function(event) {
+                        date: "1405/03/15"
 
-        event.preventDefault();
+                    }
 
+                };
 
-        const randomNumber =
-            Math.floor(100000 + Math.random() * 900000);
 
 
-        const requestCode =
-            "AT-" + randomNumber;
+                if (demoSerials[serial]) {
 
 
-        document
-            .getElementById("serviceResult")
-            .innerHTML = `
+                    const data =
+                        demoSerials[serial];
 
-                <div class="result-success">
 
-                    <h3>
-                        ✓ درخواست شما ثبت شد
-                    </h3>
+                    warrantyResult.style.display =
+                        "block";
 
-                    <p>
-                        کد پیگیری درخواست:
-                    </p>
 
-                    <strong class="request-code">
-                        ${requestCode}
-                    </strong>
+                    warrantyResult.className =
+                        "warranty-result success";
 
-                    <p>
-                        این کد را برای پیگیری‌های بعدی نزد خود نگه دارید.
-                    </p>
 
-                </div>
-            `;
+                    warrantyResult.innerHTML = `
 
+                        <div class="result-title">
+                            نتیجه استعلام گارانتی
+                        </div>
 
-        this.reset();
 
-    });
+                        <div class="result-row">
 
+                            <span>
+                                شماره سریال
+                            </span>
 
+                            <strong>
+                                ${serial}
+                            </strong>
 
-/* ================= ORDER TRACKING ================= */
+                        </div>
 
-function trackOrder() {
 
-    const code =
-        document.getElementById("trackingCode").value.trim();
+                        <div class="result-row">
 
-    const result =
-        document.getElementById("trackingResult");
+                            <span>
+                                وضعیت گارانتی
+                            </span>
 
+                            <strong>
+                                ${data.status}
+                            </strong>
 
-    if (!code) {
+                        </div>
 
-        result.innerHTML = `
 
-            <div class="result-error">
-                لطفاً کد پیگیری را وارد کنید.
-            </div>
+                        <div class="result-row">
 
-        `;
+                            <span>
+                                محصول
+                            </span>
 
-        return;
-    }
+                            <strong>
+                                ${data.product}
+                            </strong>
 
+                        </div>
 
-    if (code === "AT2026001") {
 
-        result.innerHTML = `
+                        <div class="result-row">
 
-            <div class="result-success">
+                            <span>
+                                تاریخ پایان گارانتی
+                            </span>
 
-                <h3>
-                    وضعیت سفارش
-                </h3>
+                            <strong>
+                                ${data.date}
+                            </strong>
 
-                <div class="result-row">
-                    <span>کد سفارش</span>
-                    <strong>AT2026001</strong>
-                </div>
+                        </div>
 
-                <div class="result-row">
-                    <span>وضعیت</span>
-                    <strong>در حال پردازش</strong>
-                </div>
+                    `;
 
-                <div class="result-row">
-                    <span>مرحله</span>
-                    <strong>آماده‌سازی سفارش</strong>
-                </div>
+                }
 
-            </div>
 
-        `;
+                else {
 
-    }
 
-    else {
+                    warrantyResult.style.display =
+                        "block";
 
-        result.innerHTML = `
 
-            <div class="result-error">
-                سفارش مورد نظر پیدا نشد.
-            </div>
+                    warrantyResult.className =
+                        "warranty-result error";
 
-        `;
 
-    }
+                    warrantyResult.innerHTML = `
 
-}
+                        <div class="result-title">
+                            نتیجه استعلام
+                        </div>
 
+                        <p>
 
+                            شماره سریال
 
-/* ================= CART ================= */
+                            <strong>
+                                ${serial}
+                            </strong>
 
-document
-    .querySelectorAll(".add-cart")
-    .forEach(button => {
+                            در سامانه آزمایشی پیدا نشد.
 
-        button.addEventListener("click", function() {
+                        </p>
 
-            const card =
-                this.closest(".product-card");
+                        <p>
+                            لطفاً شماره سریال را بررسی کنید.
+                        </p>
 
+                    `;
 
-            const name =
-                card.dataset.name;
-
-
-            const price =
-                Number(card.dataset.price);
-
-
-            const existing =
-                cart.find(item => item.name === name);
-
-
-            if (existing) {
-
-                existing.quantity++;
+                }
 
             }
+        );
 
-            else {
 
-                cart.push({
 
-                    name: name,
-                    price: price,
-                    quantity: 1
+        /* =================================================
+           SERVICE REQUEST
+        ================================================= */
+
+        const serviceForm =
+            document.getElementById("serviceForm");
+
+
+        const serviceResult =
+            document.getElementById("serviceResult");
+
+
+
+        serviceForm.addEventListener(
+            "submit",
+            function (event) {
+
+
+                event.preventDefault();
+
+
+
+                const name =
+                    document
+                    .getElementById("customerName")
+                    .value
+                    .trim();
+
+
+
+                const phone =
+                    document
+                    .getElementById("customerPhone")
+                    .value
+                    .trim();
+
+
+
+                const serial =
+                    document
+                    .getElementById("productSerial")
+                    .value
+                    .trim();
+
+
+
+                const type =
+                    document
+                    .getElementById("serviceType")
+                    .value;
+
+
+
+                if (
+                    name === "" ||
+                    phone === "" ||
+                    serial === "" ||
+                    type === ""
+                ) {
+
+
+                    serviceResult.style.display =
+                        "block";
+
+
+                    serviceResult.className =
+                        "warranty-result error";
+
+
+                    serviceResult.innerHTML = `
+
+                        <strong>
+                            لطفاً تمام فیلدهای الزامی را تکمیل کنید.
+                        </strong>
+
+                    `;
+
+                    return;
+
+                }
+
+
+
+                const requestNumber =
+                    "AT-" +
+                    Date.now()
+                    .toString()
+                    .slice(-6);
+
+
+
+                serviceResult.style.display =
+                    "block";
+
+
+                serviceResult.className =
+                    "warranty-result success";
+
+
+
+                serviceResult.innerHTML = `
+
+                    <div class="result-title">
+                        درخواست شما ثبت شد
+                    </div>
+
+
+                    <p>
+                        ${name} عزیز، درخواست شما
+                        با موفقیت در سامانه آزمایشی ثبت شد.
+                    </p>
+
+
+                    <div class="result-row">
+
+                        <span>
+                            کد درخواست
+                        </span>
+
+                        <strong>
+                            ${requestNumber}
+                        </strong>
+
+                    </div>
+
+
+                    <p>
+                        این کد را برای پیگیری درخواست خود نگه دارید.
+                    </p>
+
+                `;
+
+
+
+                serviceForm.reset();
+
+
+
+                serviceResult.scrollIntoView({
+
+                    behavior: "smooth",
+
+                    block: "center"
 
                 });
 
+
+            }
+        );
+
+
+
+        /* =================================================
+           TRACKING
+        ================================================= */
+
+        const trackingInput =
+            document.getElementById("trackingCode");
+
+
+        const trackingButton =
+            document.getElementById("trackingButton");
+
+
+        const trackingResult =
+            document.getElementById("trackingResult");
+
+
+
+        trackingButton.addEventListener(
+            "click",
+            function () {
+
+
+                const code =
+                    trackingInput.value.trim();
+
+
+
+                if (code === "") {
+
+
+                    trackingResult.style.display =
+                        "block";
+
+
+                    trackingResult.className =
+                        "warranty-result error";
+
+
+                    trackingResult.innerHTML = `
+
+                        <strong>
+                            کد پیگیری وارد نشده است.
+                        </strong>
+
+                    `;
+
+                    return;
+
+                }
+
+
+
+                if (code === "AT2026001") {
+
+
+                    trackingResult.style.display =
+                        "block";
+
+
+                    trackingResult.className =
+                        "warranty-result success";
+
+
+                    trackingResult.innerHTML = `
+
+                        <div class="result-title">
+                            وضعیت سفارش
+                        </div>
+
+
+                        <div class="result-row">
+
+                            <span>
+                                کد پیگیری
+                            </span>
+
+                            <strong>
+                                ${code}
+                            </strong>
+
+                        </div>
+
+
+                        <div class="result-row">
+
+                            <span>
+                                وضعیت
+                            </span>
+
+                            <strong>
+                                در حال پردازش
+                            </strong>
+
+                        </div>
+
+
+                        <div class="result-row">
+
+                            <span>
+                                مرحله فعلی
+                            </span>
+
+                            <strong>
+                                آماده‌سازی سفارش
+                            </strong>
+
+                        </div>
+
+                    `;
+
+                }
+
+
+                else {
+
+
+                    trackingResult.style.display =
+                        "block";
+
+
+                    trackingResult.className =
+                        "warranty-result error";
+
+
+                    trackingResult.innerHTML = `
+
+                        <div class="result-title">
+                            سفارش پیدا نشد
+                        </div>
+
+
+                        <p>
+
+                            کد پیگیری
+
+                            <strong>
+                                ${code}
+                            </strong>
+
+                            در سامانه آزمایشی وجود ندارد.
+
+                        </p>
+
+                    `;
+
+                }
+
+            }
+        );
+
+
+
+        /* =================================================
+           SHOPPING CART
+        ================================================= */
+
+        let cart = [];
+
+
+
+        const cartButton =
+            document.getElementById("cartButton");
+
+
+        const cartOverlay =
+            document.getElementById("cartOverlay");
+
+
+        const closeCart =
+            document.getElementById("closeCart");
+
+
+        const cartItems =
+            document.getElementById("cartItems");
+
+
+        const cartTotal =
+            document.getElementById("cartTotal");
+
+
+        const cartCount =
+            document.getElementById("cartCount");
+
+
+        const checkoutButton =
+            document.getElementById("checkoutButton");
+
+
+
+        const productCards =
+            document.querySelectorAll(".product-card");
+
+
+
+        /* ADD PRODUCT */
+
+        document
+        .querySelectorAll(".add-cart")
+        .forEach(
+            function (button) {
+
+
+                button.addEventListener(
+                    "click",
+                    function () {
+
+
+                        const card =
+                            button.closest(
+                                ".product-card"
+                            );
+
+
+                        const name =
+                            card.dataset.name;
+
+
+                        const price =
+                            Number(
+                                card.dataset.price
+                            );
+
+
+
+                        const existing =
+                            cart.find(
+                                item =>
+                                item.name === name
+                            );
+
+
+
+                        if (existing) {
+
+                            existing.quantity++;
+
+                        }
+
+                        else {
+
+                            cart.push({
+
+                                name: name,
+
+                                price: price,
+
+                                quantity: 1
+
+                            });
+
+                        }
+
+
+
+                        updateCart();
+
+
+                        button.textContent =
+                            "✓ اضافه شد";
+
+
+                        setTimeout(
+                            function () {
+
+                                button.textContent =
+                                    "افزودن به سبد";
+
+                            },
+                            1000
+                        );
+
+
+                    }
+                );
+
+            }
+        );
+
+
+
+        /* UPDATE CART */
+
+        function updateCart() {
+
+
+            cartItems.innerHTML = "";
+
+
+            if (cart.length === 0) {
+
+
+                cartItems.innerHTML = `
+
+                    <p class="empty-cart">
+                        سبد خرید شما خالی است.
+                    </p>
+
+                `;
+
+
+                cartTotal.textContent =
+                    "۰ تومان";
+
+
+                cartCount.textContent =
+                    "0";
+
+
+                return;
+
             }
 
 
-            updateCart();
 
+            let total = 0;
 
-            this.innerHTML = "✓ اضافه شد";
+            let count = 0;
 
 
-            setTimeout(() => {
 
-                this.innerHTML = "افزودن به سبد";
+            cart.forEach(
+                function (item, index) {
 
-            }, 1000);
 
-        });
+                    total +=
+                        item.price *
+                        item.quantity;
 
-    });
 
+                    count +=
+                        item.quantity;
 
 
-function updateCart() {
 
-    const items =
-        document.getElementById("cartItems");
+                    const itemElement =
+                        document.createElement(
+                            "div"
+                        );
 
 
-    const count =
-        document.getElementById("cartCount");
+                    itemElement.className =
+                        "cart-item";
 
 
-    const dashboardCount =
-        document.getElementById("dashboardCartCount");
 
+                    itemElement.innerHTML = `
 
-    const total =
-        document.getElementById("cartTotal");
+                        <div class="cart-item-info">
 
+                            <strong>
+                                ${item.name}
+                            </strong>
 
-    let totalCount = 0;
-    let totalPrice = 0;
+                            <span>
+                                ${formatPrice(item.price)}
+                                تومان
+                            </span>
 
+                        </div>
 
-    cart.forEach(item => {
 
-        totalCount += item.quantity;
+                        <div class="cart-controls">
 
-        totalPrice +=
-            item.price * item.quantity;
+                            <button
+                                type="button"
+                                class="quantity-minus"
+                                data-index="${index}"
+                            >
+                                −
+                            </button>
 
-    });
 
+                            <span>
+                                ${item.quantity}
+                            </span>
 
-    count.innerText = totalCount;
 
-    dashboardCount.innerText = totalCount;
+                            <button
+                                type="button"
+                                class="quantity-plus"
+                                data-index="${index}"
+                            >
+                                +
+                            </button>
 
 
-    total.innerText =
-        totalPrice.toLocaleString("fa-IR")
-        + " تومان";
+                            <button
+                                type="button"
+                                class="remove-item"
+                                data-index="${index}"
+                            >
+                                حذف
+                            </button>
 
+                        </div>
 
-    if (cart.length === 0) {
+                    `;
 
-        items.innerHTML = `
 
-            <div class="empty-cart">
-                سبد خرید شما خالی است.
-            </div>
 
-        `;
+                    cartItems.appendChild(
+                        itemElement
+                    );
 
-        return;
-    }
+                }
+            );
 
 
-    items.innerHTML = "";
 
+            cartTotal.textContent =
+                formatPrice(total) +
+                " تومان";
 
-    cart.forEach((item, index) => {
 
-        const itemElement =
-            document.createElement("div");
+            cartCount.textContent =
+                count;
 
 
-        itemElement.className =
-            "cart-item";
 
+            /* PLUS */
 
-        itemElement.innerHTML = `
+            document
+            .querySelectorAll(".quantity-plus")
+            .forEach(
+                function (button) {
 
-            <div class="cart-item-info">
+                    button.addEventListener(
+                        "click",
+                        function () {
 
-                <strong>
-                    ${item.name}
-                </strong>
+                            const index =
+                                Number(
+                                    button.dataset.index
+                                );
 
-                <span>
-                    ${(item.price * item.quantity)
-                    .toLocaleString("fa-IR")}
-                    تومان
-                </span>
+                            cart[index].quantity++;
 
-            </div>
+                            updateCart();
 
+                        }
+                    );
 
-            <div class="cart-controls">
+                }
+            );
 
-                <button onclick="changeQuantity(${index}, 1)">
-                    +
-                </button>
 
-                <span>
-                    ${item.quantity}
-                </span>
 
-                <button onclick="changeQuantity(${index}, -1)">
-                    −
-                </button>
+            /* MINUS */
 
-                <button
-                    class="remove-item"
-                    onclick="removeItem(${index})"
-                >
-                    حذف
-                </button>
+            document
+            .querySelectorAll(".quantity-minus")
+            .forEach(
+                function (button) {
 
-            </div>
+                    button.addEventListener(
+                        "click",
+                        function () {
 
-        `;
+                            const index =
+                                Number(
+                                    button.dataset.index
+                                );
 
 
-        items.appendChild(itemElement);
+                            cart[index].quantity--;
 
-    });
 
-}
+                            if (
+                                cart[index].quantity <= 0
+                            ) {
 
+                                cart.splice(
+                                    index,
+                                    1
+                                );
 
+                            }
 
-function changeQuantity(index, amount) {
 
-    cart[index].quantity += amount;
+                            updateCart();
 
+                        }
+                    );
 
-    if (cart[index].quantity <= 0) {
+                }
+            );
 
-        cart.splice(index, 1);
 
-    }
 
+            /* REMOVE */
 
-    updateCart();
+            document
+            .querySelectorAll(".remove-item")
+            .forEach(
+                function (button) {
 
-}
+                    button.addEventListener(
+                        "click",
+                        function () {
 
+                            const index =
+                                Number(
+                                    button.dataset.index
+                                );
 
 
-function removeItem(index) {
+                            cart.splice(
+                                index,
+                                1
+                            );
 
-    cart.splice(index, 1);
 
-    updateCart();
+                            updateCart();
 
-}
+                        }
+                    );
 
-
-
-function openCart() {
-
-    document
-        .getElementById("cartOverlay")
-        .classList.add("active");
-
-}
-
-
-
-function closeCart() {
-
-    document
-        .getElementById("cartOverlay")
-        .classList.remove("active");
-
-}
-
-
-
-function closeCartOutside(event) {
-
-    if (
-        event.target ===
-        document.getElementById("cartOverlay")
-    ) {
-
-        closeCart();
-
-    }
-
-}
-
-
-
-document
-    .getElementById("checkoutButton")
-    .addEventListener("click", function() {
-
-        if (cart.length === 0) {
-
-            alert("سبد خرید شما خالی است.");
-
-            return;
+                }
+            );
 
         }
 
 
-        alert(
-            "مرحله پرداخت در نسخه آزمایشی فعال نیست."
+
+        /* FORMAT PRICE */
+
+        function formatPrice(number) {
+
+            return Number(number)
+                .toLocaleString("fa-IR");
+
+        }
+
+
+
+        /* OPEN CART */
+
+        cartButton.addEventListener(
+            "click",
+            function () {
+
+                cartOverlay.classList.add(
+                    "active"
+                );
+
+            }
         );
 
-    });
+
+
+        /* CLOSE CART */
+
+        closeCart.addEventListener(
+            "click",
+            function () {
+
+                cartOverlay.classList.remove(
+                    "active"
+                );
+
+            }
+        );
 
 
 
-/* ================= INITIALIZE ================= */
+        /* CLICK OUTSIDE */
 
-updateCart();
+        cartOverlay.addEventListener(
+            "click",
+            function (event) {
+
+                if (
+                    event.target ===
+                    cartOverlay
+                ) {
+
+                    cartOverlay.classList.remove(
+                        "active"
+                    );
+
+                }
+
+            }
+        );
+
+
+
+        /* CHECKOUT */
+
+        checkoutButton.addEventListener(
+            "click",
+            function () {
+
+
+                if (cart.length === 0) {
+
+                    alert(
+                        "سبد خرید شما خالی است."
+                    );
+
+                    return;
+
+                }
+
+
+                alert(
+                    "مرحله پرداخت در نسخه آزمایشی فعال نیست."
+                );
+
+            }
+        );
+
+
+
+        updateCart();
+
+
+    }
+
+);
 
 </script>
 
+
 </body>
+
 </html>
